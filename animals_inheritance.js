@@ -29,3 +29,9 @@ class Chimpanzee extends Primate {
         return `Chimpanzee Bernama "${this.nama}"" Adalah Hewan "${this.status}" Berkaki "${this.num_legs}"`
     }
 }
+
+class Fish extends Animal {
+    constructor(params) {
+        super(params)
+    }
+}
