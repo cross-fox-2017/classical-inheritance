@@ -19,3 +19,13 @@ class Primate extends Mammal {
         this.num_legs = 2;
     }
 }
+
+class Chimpanzee extends Primate {
+    constructor(params) {
+        super(params);
+    }
+
+    detail() {
+        return `Chimpanzee Bernama "${this.nama}"" Adalah Hewan "${this.status}" Berkaki "${this.num_legs}"`
+    }
+}
