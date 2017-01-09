@@ -4,35 +4,62 @@ class Animal {
     this.name = name
     this.blood = blood
     this.numLeg = numLeg
+    this.SuperPowered = new SuperPowered();
+  }
+  animalName(){
+    console.log(`Nama binatang ini: ${this.name}`);
   }
   animalBlood(){
-    console.log(`tipe darah: ${this.blood}`)
+    console.log(`Tipe darah: ${this.blood}`)
   }
   animalLeg(){
-    console.log(`jumlah kaki: ${this.leg}`)
+    console.log(`Jumlah kaki: ${this.numLeg}`)
   }
-  be_invisible(){
-    console.log(`${this.name} super power is : Run fast`);
+  animalPower(){
+    return this.SuperPowered.be_invisible()
   }
 }
 
 class Aves extends Animal {
-  constructor(blood) {
-    super(blood)
+  constructor(blood,name,SuperPowered) {
+    super(blood,name,SuperPowered)
+  }
+  animalName(){
+    super.animalName()
   }
   animalBlood(){
     super.animalBlood()
   }
-  be_invisible(){
-    super.be_invisible()
+  animalPower(){
+    super.animalPower()
   }
 }
-class Reptil extends Animal {
+
+class SuperPowered {
   constructor() {
-
+  }
+  be_invisible(){
+    console.log(`${this.name} have super power: invisible`);
+  }
+  use_laser_vision(){
+    console.log(`${this.name} have super power: laser vision`);
   }
 }
 
-let binatang = new Aves('panas')
+
+class Reptil extends Animal {
+  constructor(blood,name) {
+    super(blood,name)
+  }
+  animalName(){
+    super.animalName()
+  }
+  animalBlood(){
+    super.animalBlood()
+  }
+}
+
+let binatang = new Aves('Panas','Pico')
  binatang.animalBlood()
- binatang.be_invisible()
+ binatang.animalName()
+ binatang.animalPower()
