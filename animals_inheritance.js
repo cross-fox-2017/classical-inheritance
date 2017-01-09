@@ -12,3 +12,10 @@ class Mammal extends Animal {
         super(params)
     }
 }
+
+class Primate extends Mammal {
+    constructor(params) {
+        super(params);
+        this.num_legs = 2;
+    }
+}
