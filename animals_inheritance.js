@@ -17,7 +17,6 @@ class Mammal extends Animal{
             super(numleg);
         }
 
-
 }
 
 class Primate extends Animal{
@@ -58,11 +57,8 @@ class superPoweredChim extends Chimpanzee{
 }
 
 var irsan = new Chimpanzee(2,"irsan");
-var iqbal = new Primate(2);
-
-var skill = new superPoweredChim(2,"irsan");
+var skill = new superPoweredChim();
 
 
-console.log(`jumlah kaki iqbal ${iqbal._numleg}`);
-console.log(`Jumlah kaki ${irsan.getName()} : ${irsan._numleg} \n`);
+console.log(`Nama Simpanse : ${irsan.getName()} \n jumlah kaki  : ${irsan._numleg} \n`);
 console.log(`Say something funny : ${skill.joke()}`);
