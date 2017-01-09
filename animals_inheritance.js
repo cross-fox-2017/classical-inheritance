@@ -35,3 +35,15 @@ class Fish extends Animal {
         super(params)
     }
 }
+
+class SuperPoweredFish extends Fish {
+    constructor(params) {
+        super(params)
+        this.swim = "100Km/Jam"
+    }
+
+    ability() {
+        return `Ikan Bernama "${this.nama}"" Adalah Hewan "${this.status}" Dengan Kecepatan Berenang "${this.swim}"`
+    }
+
+}
