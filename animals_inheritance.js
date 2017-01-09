@@ -47,3 +47,16 @@ class SuperPoweredFish extends Fish {
     }
 
 }
+
+var lumba = {
+  nama: "Lumba-Lumba",
+  status :"Air"
+}
+var hominidae = {
+    nama: 'Pan',
+    status: "Darat",
+}
+var lumba2 = new SuperPoweredFish(lumba)
+console.log(lumba2.ability());
+var chimp = new Chimpanzee(hominidae, 2)
+console.log(chimp.detail());
