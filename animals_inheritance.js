@@ -6,3 +6,9 @@ class Animal {
         this.status = params['status']
     }
 }
+
+class Mammal extends Animal {
+    constructor(params) {
+        super(params)
+    }
+}
