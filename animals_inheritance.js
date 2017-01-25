@@ -31,7 +31,7 @@ class Primate extends Animal {
 class SuperPoweredHorse extends Mammal{
   constructor(name, leg) {
     super(name, leg)
-    this._ability =
+    this._ability = ''
   }
   be_invisible(){
     console.log(`This ${this._name} has Invisible Ability`);
